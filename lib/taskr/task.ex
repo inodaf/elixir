@@ -3,6 +3,7 @@ defmodule Taskr.Task do
 
   schema "task" do
     field :description, :string
+    field :is_done, :boolean
   end
 
   def changeset(task, params \\ %{}) do
